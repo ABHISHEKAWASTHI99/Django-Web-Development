@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;  
+        }
+        #main-menu{
+            background-color: beige;
+            padding: 1rem;
+        }
+        .menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly; /*equally space content between the objects*/
+            flex-wrap: nowrap;
+        }
+        /* only .nav-item class belonging to .menu parent will have this setting*/
+        .menu .nav-item{
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: burlywood;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1 rem;
+            transition: all 300ms ease-in-out;
+        }
+        .menu .nav-item:hover{
+            background-color: rgba(229, 245, 9, 0.915);
+            box-shadow: 0 0 0.5rem #000;
+        }
+        .menu .nav-item .nav-link{
+            text-decoration: none; 
+            color:#000;            
+            cursor: pointer;
+           
+        }
+        #footer-menu{
+            
+            padding: 1rem;
+            height: 20rem;
+            background-color: brown;
+        }
+        #footer-menu .nav-item{
+            background-color: transparent;
+            font-size: 1rem;
+        }
+        #footer-menu .nav-link{
+             color: #f1ecec;
+        }
+        #footer-menu .menu{
+            flex-direction: column;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding:2rem;
+        }
+        .cards img{
+           width:350px;
+           aspect-ratio: 1/1;
+        }
+        .cards h2{
+            width: 350px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav id="main-menu">
+        <ul class="menu">
+            <li class="nav-item"><a href="#" class="nav-link">Lorem.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Quasi.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Aspernatur.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Obcaecati.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Enim?</a></li>
+
+        </ul>
+    </nav>
+     <section>
+        <div class="cards">
+            <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?s=1024x1024&w=is&k=20&c=9Qfj9S124ojed7s4OWu3a3vbbMC76QYkqczg4L4M-Sc=" alt="">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+        </div>
+        <div class="cards">
+            <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?s=1024x1024&w=is&k=20&c=9Qfj9S124ojed7s4OWu3a3vbbMC76QYkqczg4L4M-Sc=" alt="">
+            <h2>Esse unde velit ratione corporis.</h2>
+        </div>
+        <div class="cards">
+            <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?s=1024x1024&w=is&k=20&c=9Qfj9S124ojed7s4OWu3a3vbbMC76QYkqczg4L4M-Sc=" alt="">
+            <h2>Excepturi unde incidunt architecto error.</h2>
+        </div>
+        <div class="cards">
+            <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?s=1024x1024&w=is&k=20&c=9Qfj9S124ojed7s4OWu3a3vbbMC76QYkqczg4L4M-Sc=" alt="">
+            <h2>Cupiditate perferendis esse nesciunt mollitia?</h2>
+        </div>
+        <div class="cards">
+            <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?s=1024x1024&w=is&k=20&c=9Qfj9S124ojed7s4OWu3a3vbbMC76QYkqczg4L4M-Sc=" alt="">
+            <h2>Ea assumenda ducimus praesentium reprehenderit!</h2>
+        </div>
+        <div class="cards">
+            <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?s=1024x1024&w=is&k=20&c=9Qfj9S124ojed7s4OWu3a3vbbMC76QYkqczg4L4M-Sc=" alt="">
+            <h2>Totam ex laborum numquam autem.</h2>
+        </div>
+    </div>
+    </section>
+
+    <nav id="footer-menu">
+        <ul class="menu">
+            <li class="nav-item"><a href="" class="nav-link">Lorem.</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Suscipit!</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Itaque.</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Corrupti.</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Deleniti!</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

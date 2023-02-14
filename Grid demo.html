@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            gap: 2rem;
+        }
+
+        .card{
+            display: flex;
+            flex-flow: row wrap;
+            outline: 1px solid #000;
+            box-sizing: 0px 0px 3px #000;
+            padding: 1rem;
+        }
+        .head{
+            display: flex;
+            flex-flow: row wrap; 
+            align-items: flex-start;
+            justify-content: center;
+            
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+     <div class="gallery">
+        <div class="card">
+            <div class="head">
+                <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Lorem, ipsum dolor.</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum corrupti ipsum at soluta neque veniam saepe, ex, delectus sint natus provident, earum quis quaerat nostrum distinctio porro maiores libero.</p>
+        </div>
+        <div class="card">
+            <div class="head">
+                 <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Totam, quisquam accusamus.</h1>
+            </div>
+            <p>Consectetur id quas, aut impedit accusamus fuga repudiandae delectus velit nam sit ea architecto, natus a animi nulla porro esse, eligendi doloribus optio tempora quae quam vitae consequatur. Eos, consequuntur!</p>
+        </div>
+        <div class="card">
+            <div class="head">
+                 <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Et, mollitia error!</h1>
+            </div>
+            <p>Porro saepe soluta magnam ipsum adipisci incidunt fugiat repellat deleniti eaque. Ad, corrupti porro quasi omnis earum exercitationem iste laboriosam enim dicta fugit rem nihil maiores assumenda rerum laborum pariatur.</p>
+        </div>
+        <div class="card">
+            <div class="head">
+                 <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Nostrum, beatae vel!</h1>
+            </div>
+            <p>Aperiam, deleniti ipsam. Totam praesentium dolorem tempora error ea, cupiditate magni illo ad voluptate aliquam maxime unde incidunt accusamus repudiandae nemo, a aperiam, inventore repellat pariatur tempore vitae ducimus maiores!</p>
+        </div>
+        <div class="card">
+            <div class="head">
+                 <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Minus, culpa excepturi.</h1>
+            </div>
+            <p>Ratione deserunt est cupiditate quibusdam, porro sapiente, dolorem vitae debitis labore unde aspernatur veritatis delectus error natus sit maxime at omnis accusantium nostrum saepe quidem qui inventore quo. Ullam, enim!</p>
+        </div>
+        <div class="card">
+            <div class="head">
+                 <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Dignissimos, molestias repel</h1>
+            </div>
+            <p>Non molestias eligendi sed perferendis tenetur officia illum amet, sint perspiciatis blanditiis excepturi doloribus laborum a dolore voluptate ex quae est quasi temporibus maiores veritatis? Doloribus distinctio eligendi quisquam qui?</p>
+        </div>
+        <div class="card">
+            <div class="head">
+                 <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Quibusdam, fugiat fugit.</h1>
+            </div>
+            <p>Fugit non illo doloremque in adipisci est error possimus ipsa dolorum impedit perferendis delectus, amet blanditiis optio dolore ipsam earum necessitatibus eligendi saepe totam consectetur consequatur velit ad. Illum, provident.</p>
+        </div>
+        <div class="card">
+            <div class="head">
+                 <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Ipsa, tempore ducimus!</h1>
+            </div>
+            <p>Officia distinctio animi itaque placeat amet, autem quo, dolorem magnam atque praesentium perspiciatis nobis possimus reprehenderit sed doloribus cum eveniet voluptatem hic aut. Error sapiente unde saepe, mollitia delectus sed?</p>
+        </div>
+        <div class="card">
+            <div class="head">
+                 <a href="#"> <i class="fa fa-user"> </i></a>
+                <h1>Inventore, hic harum.</h1>
+            </div>
+            <p>Laudantium odio veniam est, repellat fugiat autem dolorem velit veritatis, tempora vitae quo tenetur nostrum voluptatibus quae voluptatum perferendis quasi architecto in, expedita soluta perspiciatis voluptas libero! Fugiat, recusandae consectetur!</p>
+        </div>
+     </div>
+</body>
+</html>
