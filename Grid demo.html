@@ -24,14 +24,31 @@
             display: flex;
             flex-flow: row wrap; 
             align-items: flex-start;
-            justify-content: center;
-            
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            overflow-x: hidden;
         }
         h1{
             margin: 0;
             padding: 0;
-            background-color: aquamarine;
             font-size: 1.3rem;
+            white-space: nowrap;
+        }
+        .head i{
+            padding-right: 1rem;
+        }
+        a{
+            width: 8rem;
+            padding: .5rem;
+            background-color: #000;
+            color: white;
+            border-radius: 3px;
+            border: none;
+            text-align: center;
+        }
+        a:hover, a:focus{
+            background-color: #376283;
         }
     </style>
 </head>
@@ -43,7 +60,11 @@
                 <h1>Lorem, ipsum dolor.</h1>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum corrupti ipsum at soluta neque veniam saepe, ex, delectus sint natus provident, earum quis quaerat nostrum distinctio porro maiores libero.</p>
+            <a>
+                Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
+       
         <div class="card">
             <div class="head">
                  <a href="#"> <i class="fa fa-user"> </i></a>
@@ -96,7 +117,7 @@
         <div class="card">
             <div class="head">
                  <a href="#"> <i class="fa fa-user"> </i></a>
-                <h1>Inventore, hic harum.</h1>
+                <h1>Inventore, hic har</h1>
             </div>
             <p>Laudantium odio veniam est, repellat fugiat autem dolorem velit veritatis, tempora vitae quo tenetur nostrum voluptatibus quae voluptatum perferendis quasi architecto in, expedita soluta perspiciatis voluptas libero! Fugiat, recusandae consectetur!</p>
         </div>
