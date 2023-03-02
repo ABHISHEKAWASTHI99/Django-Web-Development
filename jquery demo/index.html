@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 10rem;
+            background-image: linear-gradient(rgb(91, 91, 164),rgb(150, 38, 38));
+            display: grid;
+            place-content: center;
+            color: white;
+            position: relative;
+        }
+        #btn-cls{
+            background: white;
+            border: 1px black solid;
+            width: 2rem;
+            height: 2rem;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: .5rem;
+            position: absolute;
+            inset: auto 1rem -1rem auto;
+        }
+        .modal{
+            position: fixed;
+            inset: 50% auto auto 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(231, 228, 228);
+            border-radius: .5rem;
+            display: none;
+            
+        }
+        .modal form{
+            display: grid;
+            padding: 3em;
+            gap: 1rem;
+        }
+        #btn-form-cls{
+            background: white;
+            border: 1px solid red;
+            width: 2rem;
+            height: 2rem;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            position:absolute;
+            border-radius: 100%;
+            inset: 1rem 1rem auto auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Welcome to Wakanda</h2>
+        <button class="show_login">Login</button>
+        <button id="btn-cls">❌</button>
+    </div>
+    <div class="modal">
+        <form>
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Password">
+            <button>Login</button>
+            <button id="btn-form-cls">❌</button>
+            
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#btn-cls').click(()=>{
+                $('.box').slideUp(500) 
+            })
+            $('.show_login').click(()=>{
+                $('.modal').slideToggle(500) 
+            })
+            $('#btn-form-cls').click((e)=>{
+                e.preventDefault()
+                $('.modal').fadeOut(300) 
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,8 +1,11 @@
+body{
+    margin: 0;
+    min-height: max-content;
+}
 .left{
     background-image:url(https://techcrunch.com/wp-content/uploads/2018/02/include-main_1280.png?w=990&crop=1) ;
     background-attachment:fixed ;
     background-size: cover;
-    height: 100vh;
     width: 67%;
     color: white;
     text-align: center;
@@ -15,7 +18,7 @@ main{
 .brand-logo{
      width: 150px;
      height: 150px;
-     margin-top: 15%;
+     margin-top: 10%;
 }
 
 .right{
@@ -46,8 +49,8 @@ h1{
     border-top: none;
 }
 .btn img{
-    height:1rem ;
-    margin: .5rem;
+        height: 1.8rem;
+        margin-right: .5rem;
 }
 .header img{
     width: 70px;
@@ -61,19 +64,9 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 1rem;
 }
-.btn-wrapper{
-    height: 2.5rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-color: #b9bdc5;
-    background-color: transparent;
-}
-.btn-btn-google{
-    background-size: 1.17rem;
-}
 .form-card{
     background-color: white;
-    padding: 2.5rem;
+    padding: 1.3rem;
     border-radius: .5rem;
 }
 .form-control{
@@ -91,13 +84,78 @@ h1{
     text-align: center;
     color: white;
     font-size: medium;
+    margin: 1rem 0;
+    border: 0;
+    cursor: pointer;
 }
 .btn-create-account{
     width: 100%;
     height: 3rem;
-   
     text-align: center;
     color: #00a562;
     font-size: medium;
-    border-color: #00a562;
+    background-color: white;
+    border: 1px solid #00a562;
+    margin: 1rem 0;
 }
+.helpers label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #00a562;
+    text-align: left;
+    margin-right: 1rem;
+}
+.helpers a{
+    color: #00a562;
+    text-decoration: none;
+    margin-left: 3rem;
+}
+.helpers input{
+    accent-color: white;
+}
+.form-function input{
+    border:0;
+    outline: 0;
+    background: transparent;
+}
+.login-footer a{
+    color: #00a562;
+}
+.login-footer{
+    text-align: center;
+    position: relative;
+    padding-top: 1rem ;
+    margin-top: 0.5rem;
+}
+h5{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.btn-google{
+    padding: 0.2rem 3.2rem;
+    min-width: 50%;
+    background-color: white;
+    border: 1px solid grey;
+}
+.btn-yahoo{
+    padding: 0.2rem 1.2rem;
+    min-width: 50%;
+    background-color: white;
+    border: 1px solid grey;
+}
+.social-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.helpers{
+    justify-content: space-evenly;
+}
+.btn-google:hover{
+    border: 1px solid #00a562;
+}
+.btn-yahoo:hover{
+    border: 1px solid #00a562;
+}
+
+
